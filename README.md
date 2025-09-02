@@ -192,9 +192,10 @@
   <section id="galeri" class="section" style="padding-top:40px">
     <div class="container">
       <h3>Yaptığımız İşlerden</h3>
-      <p class="lead">Aşağıya kendi proje fotoğraflarınızı ekleyin. (GitHub’a yüklerken <code>images/</code> klasörü oluşturup dosya adlarını bu alanla eşleştirin.)</p>
+   
+  <p class="lead">Aşağıya kendi proje fotoğraflarınızı ekleyin. (GitHub’a yüklerken <code>images/</code> klasörü oluşturup dosya adlarını bu alanla eşleştirin.)</p>
 
-      <div class="gallery">
+  <div class="gallery">
         <!-- Görsellerinizi /images klasörüne ekleyin ve yolları güncelleyin -->
         <figure>
           <img src="images/proje-1.jpg" alt="Proje 1">
