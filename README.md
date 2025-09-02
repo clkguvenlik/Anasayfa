@@ -27,7 +27,7 @@
     img{max-width:100%;display:block;border-radius:14px}
     .container{width:min(1100px,92%);margin-inline:auto}
 
-   /* Header */
+    /* Header */
     header{position:sticky;top:0;z-index:40;background:#ffffffd9;backdrop-filter:saturate(160%) blur(8px);border-bottom:1px solid #eef2f7}
     .nav{display:flex;gap:22px;align-items:center;justify-content:space-between;padding:14px 0}
     .brand{display:flex;align-items:center;gap:12px}
@@ -42,7 +42,7 @@
     .menu a{padding:10px 12px;border-radius:12px}
     .menu a:hover{background:#eef4f8}
 
-  /* Hero */
+    /* Hero */
     .hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#ffffff 0%,#f4f8fb 65%, #eaf2f7 100%);}
     .hero::before{
       content:"";position:absolute;inset:-20% -10% auto auto;height:82%;width:140%;
@@ -61,42 +61,43 @@
     .btn-soft{background:#e8f0f6;border-color:#d6e4ee}
     .btn-soft:hover{background:#dfeaf2}
 
-  /* Bölüm başlıkları */
+    /* Bölüm başlıkları */
     .section{padding:70px 0}
     .section h3{font-family:Montserrat,Inter,sans-serif;font-size:30px;margin:0 0 20px;color:var(--primary-600)}
     .section p.lead{margin:8px 0 30px;color:#4b5563}
-  /* Hizmetler */
+
+    /* Hizmetler */
     .grid{display:grid;gap:18px}
     .grid-3{grid-template-columns:repeat(3,1fr)}
     @media (max-width:900px){.hero-inner{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr 1fr}}
     @media (max-width:620px){.grid-3{grid-template-columns:1fr}}
 
-   .card{background:#ffffff;border:1px solid #e7edf3;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);transition:.2s transform ease}
+    .card{background:#ffffff;border:1px solid #e7edf3;border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);transition:.2s transform ease}
     .card:hover{transform:translateY(-4px)}
     .card h4{margin:6px 0 8px;font-size:18px}
     .badge{display:inline-block;font-size:12px;border:1px solid #d5e1ea;background:#f1f7fb;color:#0f1720;border-radius:999px;padding:6px 10px;font-weight:700}
 
-  /* Galeri */
+    /* Galeri */
     .gallery{columns:3 280px;column-gap:16px}
     .gallery figure{break-inside:avoid;padding:0;margin:0 0 16px;background:#fff;border:1px solid #e7edf3;border-radius:16px;box-shadow:var(--shadow)}
     .gallery figcaption{padding:10px 12px;color:#4b5563;font-size:14px}
 
-  /* İletişim blok */
+    /* İletişim blok */
     .contact{background:linear-gradient(180deg,#f3f8fc, #eef5fa);border-top:1px solid #e7edf3}
     .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:22px}
     @media (max-width:800px){.contact .wrap{grid-template-columns:1fr}}
     .info{background:#fff;border:1px solid #e7edf3;border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
     .info li{margin:10px 0;color:#374151}
 
-  /* Footer */
+    /* Footer */
     footer{padding:26px 0;color:#6b7280;border-top:1px solid #e7edf3;background:#ffffff}
 
-   /* Sabit Sosyal Butonlar */
+    /* Sabit Sosyal Butonlar */
     .floating{position:fixed;right:20px;bottom:20px;display:flex;flex-direction:column;gap:12px;z-index:60}
     .fab{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;box-shadow:var(--shadow);border:1px solid #d8e6ef;background:#ffffff}
     .fab:hover{transform:translateY(-2px)}
 
-   /* Küçük yardımcı */
+    /* Küçük yardımcı */
     .muted{color:#6b7280}
     .divider{height:1px;background:#e7edf3;margin:18px 0}
   </style>
@@ -128,8 +129,12 @@
         </div>
         <p class="muted" style="margin-top:10px">7/24 Destek • Ücretsiz Keşif • Garantili Kurulum</p>
       </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1585386959984-a41552231658?q=80&w=1400&auto=format&fit=crop" alt="Güvenlik kamerası görseli">
+      </div>
+    </div>
+  </main>
 
-      
   <section id="hizmetler" class="section">
     <div class="container">
       <h3>Hizmetlerimiz</h3>
@@ -187,28 +192,29 @@
   <section id="galeri" class="section" style="padding-top:40px">
     <div class="container">
       <h3>Yaptığımız İşlerden</h3>
-   
+      <p class="lead">Aşağıya kendi proje fotoğraflarınızı ekleyin. (GitHub’a yüklerken <code>images/</code> klasörü oluşturup dosya adlarını bu alanla eşleştirin.)</p>
 
-  <div class="gallery">
+      <div class="gallery">
+        <!-- Görsellerinizi /images klasörüne ekleyin ve yolları güncelleyin -->
         <figure>
           <img src="images/proje-1.jpg" alt="Proje 1">
-          <figcaption>Kamera kurulumu</figcaption>
+          <figcaption>Kamera kurulumu – villa</figcaption>
         </figure>
         <figure>
           <img src="images/proje-2.jpg" alt="Proje 2">
-          <figcaption>Yangın algılama</figcaption>
+          <figcaption>Yangın algılama – mağaza</figcaption>
         </figure>
         <figure>
           <img src="images/proje-3.jpg" alt="Proje 3">
-          <figcaption>Otopark bariyer</figcaption>
+          <figcaption>Otopark bariyer – site girişi</figcaption>
         </figure>
         <figure>
           <img src="images/proje-4.jpg" alt="Proje 4">
-          <figcaption>Akıllı kilit</figcaption>
+          <figcaption>Akıllı kilit – ofis</figcaption>
         </figure>
         <figure>
           <img src="images/proje-5.jpg" alt="Proje 5">
-          <figcaption>Ev-Otopark şarj istasyonu</figcaption>
+          <figcaption>EV şarj istasyonu – park alanı</figcaption>
         </figure>
         <figure>
           <img src="images/proje-6.jpg" alt="Proje 6">
@@ -247,7 +253,7 @@
       © <span id="yil"></span> CLK Güvenlik Sistemleri • Tüm hakları saklıdır.
     </div>
   </footer>
-  
+
   <!-- Sabit WhatsApp & Instagram butonları -->
   <div class="floating" aria-label="Hızlı erişim">
     <a class="fab" href="https://wa.me/905368323458?text=Merhaba%20CLK%20G%C3%BCvenlik%2C%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" title="WhatsApp">
@@ -264,3 +270,5 @@
     // Yıl
     document.getElementById('yil').textContent = new Date().getFullYear();
   </script>
+</body>
+</html>
