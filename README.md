@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
   <style>
     :root{
-  /* Palet: görseldeki tonlardan türetildi */
+      /* Palet: görseldeki tonlardan türetildi */
       --bg: #0f1720;           /* çok koyu lacivert/siyah */
       --ink: #111827;          /* başlık/metin koyu */
       --primary: #1f2b39;      /* lacivert gövde */
@@ -194,7 +194,6 @@
    
 
   <div class="gallery">
-        <!-- Görsellerinizi /images klasörüne ekleyin ve yolları güncelleyin -->
         <figure>
           <img src="images/proje-1.jpg" alt="Proje 1">
           <figcaption>Kamera kurulumu</figcaption>
@@ -252,7 +251,7 @@
       © <span id="yil"></span> CLK Güvenlik Sistemleri • Tüm hakları saklıdır.
     </div>
   </footer>
-
+  
   <!-- Sabit WhatsApp & Instagram butonları -->
   <div class="floating" aria-label="Hızlı erişim">
     <a class="fab" href="https://wa.me/905368323458?text=Merhaba%20CLK%20G%C3%BCvenlik%2C%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" title="WhatsApp">
