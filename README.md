@@ -129,7 +129,7 @@
         <p class="muted" style="margin-top:10px">7/24 Destek • Ücretsiz Keşif • Garantili Kurulum</p>
       </div>
       <div>
-        <img src="images/kameralar.jpg">
+        <img src="images/kameralar.png">
       </div>
     </div>
   </main>
