@@ -157,7 +157,7 @@
   <section id="hizmetler" class="section">
     <div class="container">
       <h3>Hizmetlerimiz</h3>
-      <p class="lead">İhtiyacınıza özel projelendirme, kaliteli ekipman ve uzman montaj ile güvenliğinizi bir üst seviyeye taşıyoruz.</p>
+      <p class="lead">İhtiyacınıza özel projelendirme, kaliteli ekipman ve uzman kadromuz ile güvenliğinizi bir üst seviyeye taşıyoruz.</p>
       <div class="grid grid-3">
         <article class="card">
           <span class="badge">Kamera</span>
@@ -255,7 +255,7 @@
       <div class="info">
         <h3>Neden Biz?</h3>
         <div class="divider"></div>
-        <p>Kurumsal yaklaşım, kaliteli ekipman ve uzman montaj ile uzun ömürlü çözümler sunuyoruz. Ücretsiz keşif ve projelendirme ile bütçenize uygun teklif hazırlıyoruz.</p>
+        <p>Kurumsal yaklaşım, kaliteli ekipman ve uzman kadromuz ile uzun ömürlü çözümler sunuyoruz. Ücretsiz keşif ve projelendirme ile bütçenize uygun teklif hazırlıyoruz.</p>
         <ul>
           <li>Ücretsiz keşif ve danışmanlık</li>
           <li>Marka garantili ürünler</li>
