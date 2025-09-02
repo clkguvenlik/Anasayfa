@@ -129,7 +129,7 @@
         <p class="muted" style="margin-top:10px">7/24 Destek • Ücretsiz Keşif • Garantili Kurulum</p>
       </div>
       <div>
-        <img src="[https://www.pngwing.com/tr/free-png-pjbwf" alt="Güvenlik kamerası görseli">
+        <img src="images/kameralar.jpg">
       </div>
     </div>
   </main>
@@ -192,29 +192,28 @@
     <div class="container">
       <h3>Yaptığımız İşlerden</h3>
    
-  <p class="lead"</p>
 
   <div class="gallery">
         <!-- Görsellerinizi /images klasörüne ekleyin ve yolları güncelleyin -->
         <figure>
           <img src="images/proje-1.jpg" alt="Proje 1">
-          <figcaption>Kamera kurulumu – villa</figcaption>
+          <figcaption>Kamera kurulumu</figcaption>
         </figure>
         <figure>
           <img src="images/proje-2.jpg" alt="Proje 2">
-          <figcaption>Yangın algılama – mağaza</figcaption>
+          <figcaption>Yangın algılama</figcaption>
         </figure>
         <figure>
           <img src="images/proje-3.jpg" alt="Proje 3">
-          <figcaption>Otopark bariyer – site girişi</figcaption>
+          <figcaption>Otopark bariyer</figcaption>
         </figure>
         <figure>
           <img src="images/proje-4.jpg" alt="Proje 4">
-          <figcaption>Akıllı kilit – ofis</figcaption>
+          <figcaption>Akıllı kilit</figcaption>
         </figure>
         <figure>
           <img src="images/proje-5.jpg" alt="Proje 5">
-          <figcaption>EV şarj istasyonu – park alanı</figcaption>
+          <figcaption>Ev-Otopark şarj istasyonu</figcaption>
         </figure>
         <figure>
           <img src="images/proje-6.jpg" alt="Proje 6">
