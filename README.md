@@ -73,7 +73,7 @@
     @media (max-width:768px){
       .hero-inner{grid-template-columns:1fr;text-align:center;padding:56px 0}
       .hero img{margin:18px auto;max-width:92%}
-      .hero h2{font-size:34px}
+      .hero h2{font-size:40px}
     }
 
     /* Bölüm başlıkları */
