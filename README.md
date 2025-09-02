@@ -25,7 +25,7 @@
     body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:linear-gradient(180deg,#ffffff 0%, #f7fafc 100%)}
     a{color:inherit;text-decoration:none}
     img{max-width:100%;display:block;border-radius:14px}
-    .container{width:min(1100px,92%);margin-inline:auto}
+    .container{width:min(1100px,192%);margin-inline:auto}
 
    /* Header */
     header{position:sticky;top:0;z-index:40;background:#ffffffd9;backdrop-filter:saturate(160%) blur(8px);border-bottom:1px solid #eef2f7}
