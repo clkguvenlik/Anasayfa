@@ -130,7 +130,7 @@
         <p class="muted" style="margin-top:10px">7/24 Destek • Ücretsiz Keşif • Garantili Kurulum</p>
       </div>
       <div>
-        <img src="https://images.unsplash.com/photo-1585386959984-a41552231658?q=80&w=1400&auto=format&fit=crop" alt="Güvenlik kamerası görseli">
+        <img src="[https://www.pngwing.com/tr/free-png-pjbwf" alt="Güvenlik kamerası görseli">
       </div>
     </div>
   </main>
