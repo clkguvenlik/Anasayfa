@@ -59,7 +59,7 @@
         linear-gradient(115deg,transparent 48%, var(--accent) 48% 66%, transparent 66%);
       opacity:.16;transform:rotate(-6deg);
     }
-    .hero-inner{display:grid;grid-template-columns:1.2fr .9fr;gap:36px;align-items:center;padding:80px 0}
+    .hero-inner{display:grid;grid-template-columns:1.2fr .9fr;gap:0px;align-items:center;padding:80px 0}
     .hero h2{font-family:Montserrat,Inter,sans-serif;font-size:46px;line-height:1.08;margin:0 0 16px;color:var(--primary-600)}
     .hero p{font-size:17px;color:#374151;margin:0 0 26px}
     .cta{display:flex;gap:14px;flex-wrap:wrap}
