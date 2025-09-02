@@ -64,7 +64,7 @@
     /* Bölüm başlıkları */
     .section{padding:70px 0}
     .section h3{font-family:Montserrat,Inter,sans-serif;font-size:30px;margin:0 0 20px;color:var(--primary-600)}
-    .section p.lead{margin:8px 0 30px;color:#4b5563}
+    .section p.lead{margin:8px 0 50px;color:#4b5563}
 
     /* Hizmetler */
     .grid{display:grid;gap:18px}
@@ -130,7 +130,6 @@
         <p class="muted" style="margin-top:10px">7/24 Destek • Ücretsiz Keşif • Garantili Kurulum</p>
       </div>
       <div>
-        <img src="https://images.unsplash.com/photo-1585386959984-a41552231658?q=80&w=1400&auto=format&fit=crop" alt="Güvenlik kamerası görseli">
       </div>
     </div>
   </main>
@@ -192,9 +191,10 @@
   <section id="galeri" class="section" style="padding-top:40px">
     <div class="container">
       <h3>Yaptığımız İşlerden</h3>
-      <p class="lead">Aşağıya kendi proje fotoğraflarınızı ekleyin. (GitHub’a yüklerken <code>images/</code> klasörü oluşturup dosya adlarını bu alanla eşleştirin.)</p>
+  
 
       <div class="gallery">
+      
         <!-- Görsellerinizi /images klasörüne ekleyin ve yolları güncelleyin -->
         <figure>
           <img src="images/proje-1.jpg" alt="Proje 1">
