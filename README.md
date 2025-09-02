@@ -150,7 +150,6 @@
         <p class="muted" style="margin-top:10px">7/24 Destek • Ücretsiz Keşif • Garantili Kurulum</p>
       </div>
       <div>
-        <img src="https://images.unsplash.com/photo-1585386959984-a41552231658?q=80&w=1400&auto=format&fit=crop" alt="Güvenlik kamerası görseli">
       </div>
     </div>
   </main>
@@ -212,16 +211,15 @@
   <section id="galeri" class="section" style="padding-top:40px">
     <div class="container">
       <h3>Yaptığımız İşlerden</h3>
-      <p class="lead">Aşağıya kendi proje fotoğraflarınızı ekleyin. (GitHub’a yüklerken <code>images/</code> klasörü oluşturup dosya adlarını bu alanla eşleştirin.)</p>
 
       <div class="gallery">
         <figure>
           <img src="images/proje-1.jpg" alt="Proje 1">
-          <figcaption>Kamera kurulumu – villa</figcaption>
+          <figcaption>Kamera kurulumu</figcaption>
         </figure>
         <figure>
           <img src="images/proje-2.jpg" alt="Proje 2">
-          <figcaption>Yangın algılama – mağaza</figcaption>
+          <figcaption>Yangın algılama</figcaption>
         </figure>
         <figure>
           <img src="images/proje-3.jpg" alt="Proje 3">
@@ -229,11 +227,11 @@
         </figure>
         <figure>
           <img src="images/proje-4.jpg" alt="Proje 4">
-          <figcaption>Akıllı kilit – ofis</figcaption>
+          <figcaption>Akıllı kilit</figcaption>
         </figure>
         <figure>
           <img src="images/proje-5.jpg" alt="Proje 5">
-          <figcaption>EV şarj istasyonu – park alanı</figcaption>
+          <figcaption>Ev - Otopark şarj istasyonu</figcaption>
         </figure>
         <figure>
           <img src="images/proje-6.jpg" alt="Proje 6">
