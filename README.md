@@ -129,8 +129,7 @@
         <p class="muted" style="margin-top:10px">7/24 Destek • Ücretsiz Keşif • Garantili Kurulum</p>
       </div>
 
-  </main>
-
+      
   <section id="hizmetler" class="section">
     <div class="container">
       <h3>Hizmetlerimiz</h3>
@@ -265,5 +264,3 @@
     // Yıl
     document.getElementById('yil').textContent = new Date().getFullYear();
   </script>
-</body>
-</html>
