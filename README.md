@@ -59,7 +59,7 @@
         linear-gradient(115deg,transparent 48%, var(--accent) 48% 66%, transparent 66%);
       opacity:.16;transform:rotate(-6deg);
     }
-    .hero-inner{display:grid;grid-template-columns:1.2fr .9fr;gap:0px;align-items:center;padding:80px 0}
+    .hero-inner{display:grid;grid-template-columns:1.2fr .9fr;gap:0px;align-items:center;padding:60px 0}
     .hero h2{font-family:Montserrat,Inter,sans-serif;font-size:46px;line-height:1.08;margin:0 0 16px;color:var(--primary-600)}
     .hero p{font-size:17px;color:#374151;margin:0 0 26px}
     .cta{display:flex;gap:14px;flex-wrap:wrap}
@@ -71,13 +71,13 @@
 
     /* Hero mobil düzen */
     @media (max-width:768px){
-      .hero-inner{grid-template-columns:1fr;text-align:center;padding:56px 0}
+      .hero-inner{grid-template-columns:1fr;text-align:center;padding:40px 0}
       .hero img{margin:18px auto;max-width:92%}
       .hero h2{font-size:40px}
     }
 
     /* Bölüm başlıkları */
-    .section{padding:70px 0}
+    .section{padding:40px 0}
     .section h3{font-family:Montserrat,Inter,sans-serif;font-size:30px;margin:0 0 20px;color:var(--primary-600)}
     .section p.lead{margin:8px 0 30px;color:#4b5563}
 
