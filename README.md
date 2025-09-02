@@ -141,9 +141,7 @@
   <main id="anasayfa" class="hero">
     <div class="container hero-inner">
       <div>
-     <h2>Profesyonel  </h2>
-      <h2 span style="color:var(--accent)">Güvenlik</h2> 
-       <h2>Çözümleri</h2>
+        <h2>Profesyonel <span style="color:var(--accent)">Güvenlik</span> Çözümleri</h2>
         <p>Kamera, alarm, yangın algılama, akıllı ev ve bariyer sistemlerinde keşiften kuruluma kadar uçtan uca hizmet. <strong>CLK Güvenlik Sistemleri</strong> ile mekânlarınız güvende.</p>
         <div class="cta">
           <a class="btn btn-primary" href="https://wa.me/905368323458?text=Merhaba%20CLK%20G%C3%BCvenlik%2C%20teklif%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp'tan Yaz</a>
