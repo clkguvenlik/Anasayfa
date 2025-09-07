@@ -125,8 +125,7 @@
         <div class="logo">CLK</div>
         <h1>Güvenlik Sistemleri</h1>
       </div>
-
-      <!-- Hamburger -->
+     <!-- Hamburger -->
       <button id="menu-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false">☰</button>
 
       <nav class="menu" id="main-menu">
@@ -143,14 +142,14 @@
       <div>
         <h2>Profesyonel <span style="color:var(--accent)">Güvenlik</span> Çözümleri</h2>
         <p>Kamera, alarm, yangın algılama, akıllı ev ve bariyer sistemlerinde keşiften kuruluma kadar uçtan uca hizmet. <strong>CLK Güvenlik Sistemleri</strong> ile mekânlarınız güvende.</p>
+         </div>
+    <img src="images/hero-camera.png" alt="Güvenlik kamera sistemleri" loading="lazy" style="max-width:100%;border-radius:12px;">
         <div class="cta">
           <a class="btn btn-primary" href="https://wa.me/905368323458?text=Merhaba%20CLK%20G%C3%BCvenlik%2C%20teklif%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp'tan Yaz</a>
           <a class="btn btn-soft" href="https://www.instagram.com/guvenlik_kamera_sistemleri/" target="_blank" rel="noopener">Instagram'ı Gör</a>
         </div>
         <p class="muted" style="margin-top:10px">7/24 Destek • Ücretsiz Keşif • Garantili Kurulum</p>
-     </div>
-    <img src="images/hero-camera.png" alt="Güvenlik kamera sistemleri" loading="lazy" style="max-width:100%;border-radius:12px;">
-  </main>
+    
 
   <section id="hizmetler" class="section">
     <div class="container">
@@ -305,5 +304,3 @@
       });
     })();
   </script>
-</body>
-</html>
