@@ -149,11 +149,7 @@
         </div>
         <p class="muted" style="margin-top:10px">7/24 Destek • Ücretsiz Keşif • Garantili Kurulum</p>
      </div>
-  </div>
-  <div>
     <img src="images/hero-camera.png" alt="Güvenlik kamera sistemleri" loading="lazy" style="max-width:100%;border-radius:12px;">
-  </div>
-</section>
   </main>
 
   <section id="hizmetler" class="section">
