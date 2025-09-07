@@ -247,9 +247,8 @@
           <li><strong>Telefon / WhatsApp:</strong> <a href="https://wa.me/905368323458" target="_blank" rel="noopener">0536 832 34 58</a></li>
           <li><strong>Instagram:</strong> <a href="https://www.instagram.com/guvenlik_kamera_sistemleri/" target="_blank" rel="noopener">@guvenlik_kamera_sistemleri</a></li>
           <li><strong>E-posta:</strong> <a href="mailto:clkguvenliksistemleri@gmail.com">clkguvenliksistemleri@gmail.com</a></li>
-            <li><strong>Adres:</strong> Göztepe Mah. 2395 Sk. No:7 D:6 </p>
-          Bağcılar/İSTANBUL<br>
-        </ul>
+            <li><strong>Adres:</strong> Göztepe Mah. 2395 Sk. No:7 D:6
+          Bağcılar/İSTANBUL</ul>
       </div>
       <div class="info">
         <h3>Neden Biz?</h3>
