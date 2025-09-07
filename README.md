@@ -261,13 +261,9 @@
       </div>
     </div>
   </section>
-
-  <footer>
     <div class="container">
       © <span id="yil"></span> CLK Güvenlik Sistemleri • Tüm hakları saklıdır.
     </div>
-  </footer>
-
   <!-- Sabit WhatsApp & Instagram butonları -->
   <div class="floating" aria-label="Hızlı erişim">
     <a class="fab" href="https://wa.me/905368323458?text=Merhaba%20CLK%20G%C3%BCvenlik%2C%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" title="WhatsApp">
