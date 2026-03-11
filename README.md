@@ -9,88 +9,81 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
 <style>
 
-*{box-sizing:border-box}
+*{margin:0;padding:0;box-sizing:border-box}
 
 body{
 font-family:Inter;
-margin:0;
-background:#f6f9fc;
-color:#111;
+background:#f5f8fb;
+color:#1f2937;
 }
 
 .container{
-width:min(1200px,92%);
+width:90%;
+max-width:1200px;
 margin:auto;
 }
 
 header{
 background:white;
-border-bottom:1px solid #eee;
 position:sticky;
 top:0;
-z-index:50;
+z-index:100;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
 }
 
 .nav{
 display:flex;
-align-items:center;
 justify-content:space-between;
+align-items:center;
 padding:16px 0;
 }
 
 .logo{
-background:#1f2b39;
-color:white;
-width:45px;
-height:45px;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:10px;
 font-weight:800;
-}
-
-.menu{
-display:flex;
-gap:20px;
-font-weight:600;
+font-size:22px;
+color:#1f2b39;
 }
 
 .menu a{
-text-decoration:none;
-color:#333;
+margin-left:20px;
+font-weight:600;
 }
 
 .hero{
-padding:80px 0;
-background:linear-gradient(160deg,#fff,#eef4f8);
+height:90vh;
+display:flex;
+align-items:center;
+color:white;
+background:linear-gradient(-45deg,#1f2b39,#3b566e,#7fa4b9,#1f2b39);
+background-size:400% 400%;
+animation:gradient 12s ease infinite;
 }
 
-.hero-inner{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
+@keyframes gradient{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
 }
 
 .hero h1{
-font-size:46px;
-margin:0 0 16px;
-}
-
-.hero p{
-color:#555;
+font-size:52px;
 margin-bottom:20px;
 }
 
+.hero p{
+font-size:18px;
+margin-bottom:30px;
+}
+
 .btn{
-background:#1f2b39;
-color:white;
-padding:14px 18px;
-border-radius:12px;
-text-decoration:none;
+background:white;
+color:#1f2b39;
+padding:14px 22px;
+border-radius:10px;
 font-weight:700;
 display:inline-block;
 }
@@ -99,211 +92,215 @@ display:inline-block;
 padding:80px 0;
 }
 
-.grid{
+.stats{
+background:white;
+}
+
+.stats-grid{
 display:grid;
-grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+text-align:center;
+}
+
+.stats h2{
+font-size:40px;
+color:#1f2b39;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
 .card{
 background:white;
-padding:24px;
-border-radius:16px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
+padding:25px;
+border-radius:14px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
 transition:.3s;
 }
 
 .card:hover{
-transform:translateY(-6px);
+transform:translateY(-8px);
 }
 
-.slider{
-overflow:hidden;
-position:relative;
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
 }
 
-.slides{
-display:flex;
-gap:20px;
-transition:.5s;
-}
-
-.slide{
-min-width:320px;
-background:white;
-border-radius:16px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-cursor:pointer;
-}
-
-.slide img{
+.gallery img{
 width:100%;
-border-radius:16px 16px 0 0;
-}
-
-.slide p{
-padding:10px;
-}
-
-.slider-btn{
-position:absolute;
-top:50%;
-transform:translateY(-50%);
-background:white;
-border:none;
-width:40px;
-height:40px;
-border-radius:50%;
+border-radius:10px;
 cursor:pointer;
 }
-
-.prev{left:0}
-.next{right:0}
 
 .brands{
-display:grid;
-grid-template-columns:repeat(5,1fr);
-gap:20px;
-align-items:center;
-text-align:center;
-}
-
-.brands img{
-max-width:120px;
-opacity:.7;
-filter:grayscale(1);
-}
-
-.brands img:hover{
-filter:none;
-opacity:1;
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+justify-content:center;
+font-weight:700;
+font-size:22px;
+color:#64748b;
 }
 
 .testimonials{
 display:grid;
-grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:20px;
 }
 
 .testimonial{
 background:white;
-padding:20px;
-border-radius:16px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
+padding:25px;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
-.contact{
-background:#eef4f8;
-}
-
-.wrap{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
-}
-
-.info{
+.form{
 background:white;
-padding:24px;
-border-radius:16px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
+padding:30px;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+max-width:500px;
+}
+
+.form input,.form textarea{
+width:100%;
+padding:12px;
+margin-bottom:12px;
+border:1px solid #e5e7eb;
+border-radius:8px;
 }
 
 footer{
 text-align:center;
 padding:30px;
 background:white;
-border-top:1px solid #eee;
-color:#666;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+font-weight:700;
 }
 
 .lightbox{
 position:fixed;
-inset:0;
-background:rgba(0,0,0,.8);
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.8);
 display:none;
 align-items:center;
 justify-content:center;
 }
 
 .lightbox img{
-max-width:90%;
-max-height:90%;
+max-width:85%;
 border-radius:10px;
 }
 
-@media(max-width:900px){
-
-.hero-inner{grid-template-columns:1fr;text-align:center}
-.grid{grid-template-columns:1fr}
-.testimonials{grid-template-columns:1fr}
-.wrap{grid-template-columns:1fr}
-.brands{grid-template-columns:repeat(2,1fr)}
-
-}
-
 </style>
-
 </head>
 
 <body>
 
 <header>
-
 <div class="container nav">
 
-<div style="display:flex;align-items:center;gap:10px">
-<div class="logo">CLK</div>
-<b>Güvenlik Sistemleri</b>
-</div>
+<div class="logo">CLK Güvenlik</div>
 
 <nav class="menu">
 <a href="#">Anasayfa</a>
-<a href="#hizmetler">Hizmetler</a>
-<a href="#projeler">Projeler</a>
-<a href="#iletisim">İletişim</a>
+<a href="#">Hizmetler</a>
+<a href="#">Projeler</a>
+<a href="#">İletişim</a>
 </nav>
 
 </div>
-
 </header>
 
 <section class="hero">
 
-<div class="container hero-inner">
+<div class="container">
 
-<div>
+<h1 data-aos="fade-up">Profesyonel Güvenlik Sistemleri</h1>
 
-<h1>Profesyonel Güvenlik Sistemleri</h1>
-
-<p>
-Kamera, alarm, yangın algılama ve akıllı ev sistemlerinde profesyonel çözümler.
+<p data-aos="fade-up" data-aos-delay="200">
+Kamera, alarm, bariyer ve akıllı ev sistemlerinde profesyonel çözümler.
 </p>
 
-<a class="btn" href="https://wa.me/905368323458">WhatsApp Teklif Al</a>
-
-</div>
-
-<img src="images/hero-camera.png">
+<a class="btn" href="https://wa.me/905368323458">WhatsApp ile Teklif Al</a>
 
 </div>
 
 </section>
 
-<section id="hizmetler" class="section">
+<section class="section stats">
+
+<div class="container stats-grid">
+
+<div>
+<h2 class="counter" data-target="12">0</h2>
+<p>Yıl Tecrübe</p>
+</div>
+
+<div>
+<h2 class="counter" data-target="950">0</h2>
+<p>Kurulum</p>
+</div>
+
+<div>
+<h2 class="counter" data-target="500">0</h2>
+<p>Müşteri</p>
+</div>
+
+<div>
+<h2>7/24</h2>
+<p>Destek</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
 
 <div class="container">
 
 <h2>Hizmetlerimiz</h2>
 
-<div class="grid">
+<div class="services">
 
-<div class="card">IP Kamera Sistemleri</div>
-<div class="card">Yangın Algılama</div>
-<div class="card">Alarm Sistemleri</div>
-<div class="card">Bariyer Sistemleri</div>
-<div class="card">Akıllı Ev Otomasyonu</div>
-<div class="card">Teknik Servis</div>
+<div class="card" data-aos="fade-up">
+<h3>Kamera Sistemleri</h3>
+<p>IP ve AHD kamera çözümleri</p>
+</div>
+
+<div class="card" data-aos="fade-up">
+<h3>Yangın Algılama</h3>
+<p>Yangın ihbar sistemleri</p>
+</div>
+
+<div class="card" data-aos="fade-up">
+<h3>Bariyer Sistemleri</h3>
+<p>Otopark giriş kontrol sistemleri</p>
+</div>
+
+<div class="card" data-aos="fade-up">
+<h3>Akıllı Ev</h3>
+<p>Otomasyon sistemleri</p>
+</div>
 
 </div>
 
@@ -311,26 +308,20 @@ Kamera, alarm, yangın algılama ve akıllı ev sistemlerinde profesyonel çöz�
 
 </section>
 
-<section id="projeler" class="section">
+<section class="section">
 
 <div class="container">
 
 <h2>Projelerimiz</h2>
 
-<div class="slider">
+<div class="gallery">
 
-<button class="slider-btn prev">❮</button>
-
-<div class="slides">
-
-<div class="slide"><img src="images/proje-1.jpg"><p>Kamera Kurulumu</p></div>
-<div class="slide"><img src="images/proje-2.jpg"><p>Yangın Algılama</p></div>
-<div class="slide"><img src="images/proje-3.jpg"><p>Bariyer</p></div>
-<div class="slide"><img src="images/proje-4.jpg"><p>Akıllı Kilit</p></div>
-
-</div>
-
-<button class="slider-btn next">❯</button>
+<img src="images/proje-1.jpg">
+<img src="images/proje-2.jpg">
+<img src="images/proje-3.jpg">
+<img src="images/proje-4.jpg">
+<img src="images/proje-5.jpg">
+<img src="images/proje-6.jpg">
 
 </div>
 
@@ -346,11 +337,10 @@ Kamera, alarm, yangın algılama ve akıllı ev sistemlerinde profesyonel çöz�
 
 <div class="brands">
 
-<img src="images/hikvision.png">
-<img src="images/dahua.png">
-<img src="images/paradox.png">
-<img src="images/ajax.png">
-<img src="images/bosch.png">
+<div>HIKVISION</div>
+<div>DAHUA</div>
+<div>EZVIZ</div>
+<div>TP-LINK</div>
 
 </div>
 
@@ -366,43 +356,15 @@ Kamera, alarm, yangın algılama ve akıllı ev sistemlerinde profesyonel çöz�
 
 <div class="testimonials">
 
-<div class="testimonial">Site kamera sistemimizi kurdular çok memnun kaldık.</div>
-<div class="testimonial">Hızlı kurulum ve temiz işçilik.</div>
-<div class="testimonial">7/24 destek veriyorlar.</div>
-
+<div class="testimonial">
+<p>Kurulum çok hızlı yapıldı. Çok memnun kaldık.</p>
+<strong>Ahmet Y.</strong>
 </div>
 
+<div class="testimonial">
+<p>Kamera sistemi çok kaliteli. Tavsiye ederim.</p>
+<strong>Mehmet K.</strong>
 </div>
-
-</section>
-
-<section id="iletisim" class="section contact">
-
-<div class="container wrap">
-
-<div class="info">
-
-<h3>İletişim</h3>
-
-<p>Telefon: 0536 832 34 58</p>
-<p>Email: clkguvenliksistemleri@gmail.com</p>
-<p>Instagram: @guvenlik_kamera_sistemleri</p>
-
-</div>
-
-<div class="info">
-
-<h3>Teklif Al</h3>
-
-<form>
-
-<input placeholder="Ad Soyad" style="width:100%;padding:10px;margin-bottom:10px">
-
-<input placeholder="Telefon" style="width:100%;padding:10px;margin-bottom:10px">
-
-<textarea placeholder="Mesaj" style="width:100%;padding:10px"></textarea>
-
-</form>
 
 </div>
 
@@ -410,56 +372,91 @@ Kamera, alarm, yangın algılama ve akıllı ev sistemlerinde profesyonel çöz�
 
 </section>
 
-<div class="lightbox" id="lightbox"><img></div>
+<section class="section">
+
+<div class="container">
+
+<h2>Teklif Al</h2>
+
+<div class="form">
+
+<input placeholder="Ad Soyad">
+
+<input placeholder="Telefon">
+
+<textarea placeholder="Mesajınız"></textarea>
+
+<button class="btn">Gönder</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2>Adres</h2>
+
+<iframe
+src="https://maps.google.com/maps?q=Bağcılar%20İstanbul&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%" height="300" style="border:0;border-radius:12px;">
+</iframe>
+
+</div>
+
+</section>
 
 <footer>
 
-© <span id="yil"></span> CLK Güvenlik Sistemleri
+© 2026 CLK Güvenlik Sistemleri
 
 </footer>
 
+<a class="whatsapp" href="https://wa.me/905368323458">WhatsApp</a>
+
+<div class="lightbox" id="lightbox">
+<img id="lightbox-img">
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script>
 
-document.getElementById("yil").textContent=new Date().getFullYear()
+AOS.init()
 
-const slides=document.querySelector(".slides")
-const slide=document.querySelectorAll(".slide")
-
-let index=0
-
-function updateSlider(){
-slides.style.transform=`translateX(-${index*340}px)`
-}
-
-setInterval(()=>{
-index++
-if(index>slide.length-2) index=0
-updateSlider()
-},4000)
-
-document.querySelector(".next").onclick=()=>{
-index++
-if(index>slide.length-2) index=0
-updateSlider()
-}
-
-document.querySelector(".prev").onclick=()=>{
-index--
-if(index<0) index=slide.length-2
-updateSlider()
-}
-
+const images=document.querySelectorAll(".gallery img")
 const lightbox=document.getElementById("lightbox")
-const lightboxImg=lightbox.querySelector("img")
+const lightboxImg=document.getElementById("lightbox-img")
 
-document.querySelectorAll(".slide img").forEach(img=>{
+images.forEach(img=>{
 img.onclick=()=>{
 lightbox.style.display="flex"
 lightboxImg.src=img.src
 }
 })
 
-lightbox.onclick=()=>lightbox.style.display="none"
+lightbox.onclick=()=>{lightbox.style.display="none"}
+
+const counters=document.querySelectorAll(".counter")
+
+counters.forEach(counter=>{
+counter.innerText="0"
+const update=()=>{
+const target=+counter.getAttribute("data-target")
+const c=+counter.innerText
+const inc=target/100
+if(c<target){
+counter.innerText=Math.ceil(c+inc)
+setTimeout(update,20)
+}else{
+counter.innerText=target
+}
+}
+update()
+})
 
 </script>
 
