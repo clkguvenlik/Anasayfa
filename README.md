@@ -1127,7 +1127,7 @@
         Konut, site, işyeri, ofis, depo ve ticari alanlara uygun sistemleri ihtiyaca göre planlıyor; yalnızca ürün değil, doğru kurgu ve uzun ömürlü performans sunuyoruz.
       </p>
 
-      <div class="grid services-grid">
+  <div class="grid services-grid">
         <article class="service card reveal">
           <div class="service-icon">
             <svg viewBox="0 0 24 24"><path d="M4 15c0-3 2.5-5 8-5s8 2 8 5"/><path d="M12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M6 15v4"/><path d="M18 15v4"/><path d="M9 17h6"/></svg>
@@ -1141,7 +1141,7 @@
           </ul>
         </article>
 
-        <article class="service card reveal">
+   <article class="service card reveal">
           <div class="service-icon">
             <svg viewBox="0 0 24 24"><path d="M12 3v9"/><path d="M8 10c-2 1.3-3 3-3 5a7 7 0 0 0 14 0c0-2-1-3.7-3-5"/><path d="M9 4h6"/></svg>
           </div>
@@ -1154,7 +1154,7 @@
           </ul>
         </article>
 
-        <article class="service card reveal">
+  <article class="service card reveal">
           <div class="service-icon">
             <svg viewBox="0 0 24 24"><path d="M4 17h16"/><path d="M6 17V9"/><path d="M18 17V9"/><path d="M3 9h18"/><path d="M7 9V6h10v3"/></svg>
           </div>
@@ -1167,7 +1167,7 @@
           </ul>
         </article>
 
-        <article class="service card reveal">
+  <article class="service card reveal">
           <div class="service-icon">
             <svg viewBox="0 0 24 24"><path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4Z"/><path d="M9 12l2 2 4-4"/></svg>
           </div>
@@ -1180,7 +1180,7 @@
           </ul>
         </article>
 
-        <article class="service card reveal">
+   <article class="service card reveal">
           <div class="service-icon">
             <svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
           </div>
@@ -1193,7 +1193,7 @@
           </ul>
         </article>
 
-        <article class="service card reveal">
+   <article class="service card reveal">
           <div class="service-icon">
             <svg viewBox="0 0 24 24"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"/><path d="M2 12h3"/><path d="M19 12h3"/><path d="M12 2v3"/><path d="M12 19v3"/><path d="m4.9 4.9 2.1 2.1"/><path d="m17 17 2.1 2.1"/><path d="m19.1 4.9-2.1 2.1"/><path d="m7 17-2.1 2.1"/></svg>
           </div>
@@ -1229,7 +1229,7 @@
         </div>
       </div>
 
-      <div class="panel card reveal" id="surec">
+  <div class="panel card reveal" id="surec">
         <span class="eyebrow">• Çalışma Sürecimiz</span>
         <h2 class="title" style="font-size:clamp(28px,3vw,42px)">İşi baştan sona sistemli yürütüyoruz</h2>
         <div class="process-list">
@@ -1274,7 +1274,7 @@
         Kurulum sonrası temiz görünüm, kararlı çalışma ve kullanıcı deneyimi bir araya geldiğinde ortaya uzun ömürlü ve güven veren projeler çıkar.
       </p>
 
-      <div class="grid projects-grid">
+  <div class="grid projects-grid">
         <article class="project card reveal">
           <div class="project-media"><img src="images/proje-1.jpg" alt="Kamera kurulumu" class="zoomable"></div>
           <div class="project-body">
@@ -1284,7 +1284,7 @@
           </div>
         </article>
 
-        <article class="project card reveal">
+  <article class="project card reveal">
           <div class="project-media"><img src="images/proje-2.jpg" alt="Yangın algılama" class="zoomable"></div>
           <div class="project-body">
             <div class="project-badges"><span>Yangın</span><span>İşyeri</span></div>
@@ -1293,7 +1293,7 @@
           </div>
         </article>
 
-        <article class="project card reveal">
+   <article class="project card reveal">
           <div class="project-media"><img src="images/proje-3.jpg" alt="Bariyer sistemleri" class="zoomable"></div>
           <div class="project-body">
             <div class="project-badges"><span>Bariyer</span><span>Site Girişi</span></div>
@@ -1302,7 +1302,7 @@
           </div>
         </article>
 
-        <article class="project card reveal">
+   <article class="project card reveal">
           <div class="project-media"><img src="images/proje-4.jpg" alt="Akıllı kilit sistemi" class="zoomable"></div>
           <div class="project-body">
             <div class="project-badges"><span>Erişim</span><span>Akıllı Kilit</span></div>
@@ -1311,7 +1311,7 @@
           </div>
         </article>
 
-        <article class="project card reveal">
+   <article class="project card reveal">
           <div class="project-media"><img src="images/proje-5.jpg" alt="Şarj istasyonu" class="zoomable"></div>
           <div class="project-body">
             <div class="project-badges"><span>EV Şarj</span><span>Konut</span></div>
@@ -1320,7 +1320,7 @@
           </div>
         </article>
 
-        <article class="project card reveal">
+   <article class="project card reveal">
           <div class="project-media"><img src="images/proje-6.jpg" alt="Alarm entegrasyonu" class="zoomable"></div>
           <div class="project-body">
             <div class="project-badges"><span>Alarm</span><span>Entegrasyon</span></div>
