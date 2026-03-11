@@ -1,10 +1,9 @@
-<!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CLK Güvenlik Sistemleri | Premium Kurumsal Güvenlik Çözümleri</title>
-  <meta name="description" content="CLK Güvenlik Sistemleri; kamera, alarm, yangın algılama, bariyer, geçiş kontrol ve akıllı ev sistemlerinde kurumsal çözümler sunar.">
+  <meta name="description" content="CLK Güvenlik Sistemleri; kamera, alarm, yangın algılama, bariyer, geçiş kontrol ve akıllı ev sistemlerinde profesyonel kurumsal çözümler sunar.">
   <meta name="theme-color" content="#0f172a" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,21 +13,22 @@
   <style>
     :root{
       --bg:#f8fbff;
-      --bg-soft:#f1f6fb;
+      --bg-soft:#f2f7fc;
       --panel:#ffffff;
       --panel-2:#fbfdff;
-      --line:#e4edf5;
-      --text:#1f2b39;
-      --muted:#617286;
-      --title:#142033;
+      --line:#e3ecf4;
+      --line-strong:#d3e1ec;
+      --text:#243446;
+      --title:#122033;
+      --muted:#66788c;
       --accent:#7fa4b9;
       --accent-2:#a8cadb;
       --accent-3:#223449;
       --header:#0f172a;
       --header-2:#162033;
       --success:#25D366;
-      --shadow:0 20px 50px rgba(16,24,40,.08);
-      --shadow-soft:0 10px 25px rgba(16,24,40,.06);
+      --shadow:0 20px 50px rgba(15,23,42,.08);
+      --shadow-soft:0 10px 24px rgba(15,23,42,.06);
       --radius:24px;
       --radius-sm:18px;
       --max:1240px;
@@ -42,8 +42,8 @@
       color:var(--text);
       background:
         radial-gradient(circle at 0% 0%, rgba(127,164,185,.10), transparent 22%),
-        radial-gradient(circle at 100% 10%, rgba(168,202,219,.10), transparent 20%),
-        linear-gradient(180deg,#ffffff 0%, #f8fbff 42%, #f3f8fd 100%);
+        radial-gradient(circle at 100% 8%, rgba(168,202,219,.12), transparent 18%),
+        linear-gradient(180deg,#ffffff 0%, #f8fbff 44%, #f2f7fc 100%);
       overflow-x:hidden;
     }
 
@@ -66,9 +66,9 @@
       gap:8px;
       padding:8px 12px;
       border-radius:999px;
-      border:1px solid #d8e5f0;
+      border:1px solid #dbe7f0;
       background:#f7fbff;
-      color:#557089;
+      color:#5f7991;
       font-size:13px;
       font-weight:800;
       letter-spacing:.2px;
@@ -79,13 +79,13 @@
       font-size:clamp(30px,4vw,54px);
       line-height:1.03;
       font-weight:900;
-      letter-spacing:-1.6px;
+      letter-spacing:-1.7px;
       color:var(--title);
     }
 
     .lead{
       margin:0 0 32px;
-      max-width:760px;
+      max-width:780px;
       color:var(--muted);
       font-size:17px;
       line-height:1.85;
@@ -115,7 +115,7 @@
     .btn-secondary{
       background:#fff;
       color:var(--title);
-      border-color:#dbe6f0;
+      border-color:#dce6ef;
       box-shadow:var(--shadow-soft);
     }
 
@@ -134,11 +134,11 @@
       position:sticky;
       top:0;
       z-index:1000;
-      background:rgba(15,23,42,.92);
+      background:rgba(15,23,42,.94);
       backdrop-filter:blur(14px);
       -webkit-backdrop-filter:blur(14px);
       border-bottom:1px solid rgba(255,255,255,.06);
-      box-shadow:0 10px 30px rgba(2,6,23,.18);
+      box-shadow:0 10px 30px rgba(2,6,23,.16);
     }
 
     .nav{
@@ -154,6 +154,7 @@
       display:flex;
       align-items:center;
       gap:14px;
+      min-width:0;
     }
 
     .logo{
@@ -162,17 +163,19 @@
       border-radius:14px;
       display:grid;
       place-items:center;
-      background:linear-gradient(135deg,#203046,#7fa4b9);
+      background:linear-gradient(135deg,#213249,#7fa4b9);
       color:#fff;
       font-weight:900;
       letter-spacing:.7px;
       box-shadow:0 14px 32px rgba(127,164,185,.25);
+      flex:0 0 auto;
     }
 
     .brand-meta strong{
       display:block;
       color:#fff;
       font-size:15px;
+      white-space:nowrap;
     }
 
     .brand-meta span{
@@ -180,6 +183,7 @@
       color:#9fb1c7;
       font-size:12px;
       margin-top:2px;
+      white-space:nowrap;
     }
 
     .menu{
@@ -191,7 +195,7 @@
     .menu a{
       padding:11px 14px;
       border-radius:12px;
-      color:#dbe7f4;
+      color:#dce8f5;
       font-size:14px;
       font-weight:700;
     }
@@ -223,7 +227,7 @@
     .hero{
       position:relative;
       overflow:hidden;
-      padding:96px 0 56px;
+      padding:100px 0 60px;
       min-height:100vh;
       display:flex;
       align-items:center;
@@ -233,13 +237,13 @@
       position:absolute;
       border-radius:999px;
       filter:blur(70px);
-      opacity:.5;
+      opacity:.55;
       pointer-events:none;
     }
 
     .hero-blur.one{
       width:320px;height:320px;
-      background:rgba(127,164,185,.24);
+      background:rgba(127,164,185,.22);
       top:40px;left:-90px;
     }
 
@@ -251,7 +255,7 @@
 
     .hero-blur.three{
       width:340px;height:340px;
-      background:rgba(34,52,73,.12);
+      background:rgba(34,52,73,.10);
       left:35%;bottom:-120px;
     }
 
@@ -266,12 +270,12 @@
 
     .hero-copy h1{
       margin:18px 0 16px;
-      font-size:clamp(42px,6vw,86px);
-      line-height:.95;
+      font-size:clamp(42px,6vw,88px);
+      line-height:.94;
       letter-spacing:-2.6px;
       font-weight:900;
       color:var(--title);
-      max-width:820px;
+      max-width:850px;
     }
 
     .hero-copy p{
@@ -300,7 +304,7 @@
       border-radius:999px;
       border:1px solid #dbe6f0;
       background:#fff;
-      color:#4b6279;
+      color:#4f667d;
       font-size:13px;
       font-weight:700;
       box-shadow:var(--shadow-soft);
@@ -308,7 +312,7 @@
 
     .hero-visual{
       position:relative;
-      min-height:620px;
+      min-height:640px;
       overflow:hidden;
       border-radius:30px;
       border:1px solid var(--line);
@@ -321,7 +325,7 @@
 
     .hero-main-image{
       position:absolute;
-      inset:18px 18px 160px 18px;
+      inset:18px 18px 170px 18px;
       border-radius:24px;
       overflow:hidden;
       border:1px solid #dce8f2;
@@ -338,7 +342,7 @@
       position:absolute;
       padding:14px 16px;
       border-radius:18px;
-      background:rgba(255,255,255,.92);
+      background:rgba(255,255,255,.94);
       border:1px solid #dbe6f0;
       color:var(--title);
       font-size:14px;
@@ -346,9 +350,9 @@
       box-shadow:var(--shadow);
     }
 
-    .float-1{left:18px;bottom:92px}
+    .float-1{left:18px;bottom:102px}
     .float-2{right:18px;top:18px}
-    .float-3{right:18px;bottom:24px}
+    .float-3{right:18px;bottom:28px}
 
     .hero-mini-stats{
       position:absolute;
@@ -384,7 +388,7 @@
     }
 
     .stats-strip{
-      margin-top:26px;
+      margin-top:28px;
       display:grid;
       grid-template-columns:repeat(4,1fr);
       gap:16px;
@@ -397,7 +401,7 @@
 
     .stat h3{
       margin:0 0 8px;
-      font-size:34px;
+      font-size:36px;
       line-height:1;
       font-weight:900;
       color:var(--title);
@@ -416,7 +420,7 @@
       overflow:hidden;
       border-top:1px solid #e7eef5;
       border-bottom:1px solid #e7eef5;
-      background:rgba(255,255,255,.65);
+      background:rgba(255,255,255,.7);
     }
 
     .brand-marquee{
@@ -439,7 +443,7 @@
     .services-grid{grid-template-columns:repeat(3,1fr)}
 
     .service{
-      padding:26px;
+      padding:28px;
       transition:.25s ease;
     }
 
@@ -449,14 +453,22 @@
     }
 
     .service-icon{
-      width:58px;height:58px;
-      border-radius:16px;
+      width:62px;height:62px;
+      border-radius:18px;
       display:grid;place-items:center;
       margin-bottom:18px;
-      font-size:24px;
       background:linear-gradient(135deg,#eef6fb,#ffffff);
       border:1px solid #dce7f1;
       box-shadow:var(--shadow-soft);
+    }
+
+    .service-icon svg{
+      width:28px;height:28px;
+      stroke:#35506b;
+      fill:none;
+      stroke-width:1.8;
+      stroke-linecap:round;
+      stroke-linejoin:round;
     }
 
     .service h3{
@@ -483,7 +495,7 @@
     .service li{
       position:relative;
       padding-left:18px;
-      color:#41586e;
+      color:#455d74;
       font-size:14px;
     }
 
@@ -530,6 +542,48 @@
     }
 
     .feature p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.75;
+      font-size:14px;
+    }
+
+    .process-list{
+      display:grid;
+      gap:14px;
+      margin-top:8px;
+    }
+
+    .process-step{
+      display:grid;
+      grid-template-columns:56px 1fr;
+      gap:16px;
+      align-items:start;
+      padding:18px;
+      border-radius:18px;
+      border:1px solid #e4edf5;
+      background:#fff;
+      box-shadow:var(--shadow-soft);
+    }
+
+    .step-no{
+      width:56px;height:56px;
+      border-radius:16px;
+      display:grid;place-items:center;
+      background:linear-gradient(135deg,#eef6fb,#ffffff);
+      border:1px solid #dce7f1;
+      color:#223449;
+      font-weight:900;
+      box-shadow:var(--shadow-soft);
+    }
+
+    .process-step h4{
+      margin:4px 0 8px;
+      font-size:18px;
+      color:var(--title);
+    }
+
+    .process-step p{
       margin:0;
       color:var(--muted);
       line-height:1.75;
@@ -598,9 +652,7 @@
 
     .trust-grid{grid-template-columns:repeat(3,1fr)}
 
-    .trust-card{
-      padding:26px;
-    }
+    .trust-card{padding:26px}
 
     .trust-card h3{
       margin:0 0 10px;
@@ -616,9 +668,7 @@
 
     .testimonials-grid{grid-template-columns:repeat(3,1fr)}
 
-    .testimonial{
-      padding:24px;
-    }
+    .testimonial{padding:24px}
 
     .testimonial p{
       margin:0 0 18px;
@@ -697,7 +747,7 @@
     }
 
     .cta-band{
-      padding:34px;
+      padding:36px;
       display:flex;
       align-items:center;
       justify-content:space-between;
@@ -712,7 +762,7 @@
 
     .cta-band h3{
       margin:0 0 10px;
-      font-size:34px;
+      font-size:36px;
       color:var(--title);
       letter-spacing:-1px;
     }
@@ -826,7 +876,7 @@
     footer{
       padding:28px 0 44px;
       border-top:1px solid #e6eef5;
-      background:rgba(255,255,255,.7);
+      background:rgba(255,255,255,.75);
     }
 
     .footer-row{
@@ -928,7 +978,7 @@
       .stats-strip,.services-grid,.projects-grid,.trust-grid,.testimonials-grid{
         grid-template-columns:1fr;
       }
-      .hero-visual{min-height:500px}
+      .hero-visual{min-height:520px}
       .hero-main-image{inset:16px 16px 152px 16px}
       .hero-mini-stats{grid-template-columns:1fr}
       .form-grid{grid-template-columns:1fr}
@@ -938,7 +988,7 @@
     @media (max-width:560px){
       .section{padding:78px 0}
       .hero-copy h1{letter-spacing:-1.5px}
-      .hero-visual{min-height:440px}
+      .hero-visual{min-height:460px}
       .float-1,.float-2,.float-3{font-size:12px}
       .stat h3{font-size:30px}
       .cta-band h3{font-size:28px}
@@ -964,6 +1014,7 @@
         <a href="#hizmetler">Hizmetler</a>
         <a href="#projeler">Projeler</a>
         <a href="#nedenbiz">Neden Biz?</a>
+        <a href="#surec">Süreç</a>
         <a href="#sss">SSS</a>
         <a href="#iletisim">İletişim</a>
         <a href="https://wa.me/905368323458?text=Merhaba%20CLK%20G%C3%BCvenlik%2C%20teklif%20almak%20istiyorum." target="_blank" rel="noopener" class="btn cta">Teklif Al</a>
@@ -979,7 +1030,7 @@
     <div class="container hero-grid">
       <div class="hero-copy reveal">
         <span class="eyebrow">• Güven veren modern kurumsal yapı</span>
-        <h1>Güvenlik sisteminizi daha <span style="color:#5d7f97">premium</span> ve daha güçlü gösterelim.</h1>
+        <h1>Güvenlik sisteminizi daha <span style="color:#5f8198">premium</span>, daha güven veren bir seviyeye taşıyalım.</h1>
         <p>
           Kamera, alarm, yangın algılama, bariyer, akıllı ev ve erişim kontrol projelerinde;
           keşiften kurulum ve teknik desteğe kadar markanıza yakışan, estetik ve profesyonel çözümler sunuyoruz.
@@ -1078,7 +1129,9 @@
 
       <div class="grid services-grid">
         <article class="service card reveal">
-          <div class="service-icon">📷</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 15c0-3 2.5-5 8-5s8 2 8 5"/><path d="M12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M6 15v4"/><path d="M18 15v4"/><path d="M9 17h6"/></svg>
+          </div>
           <h3>Kamera Sistemleri</h3>
           <p>İç ve dış alanlarda yüksek çözünürlüklü izleme, kayıt ve uzaktan kontrol sağlayan profesyonel kamera altyapıları kuruyoruz.</p>
           <ul>
@@ -1089,7 +1142,9 @@
         </article>
 
         <article class="service card reveal">
-          <div class="service-icon">🔥</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 3v9"/><path d="M8 10c-2 1.3-3 3-3 5a7 7 0 0 0 14 0c0-2-1-3.7-3-5"/><path d="M9 4h6"/></svg>
+          </div>
           <h3>Yangın Algılama</h3>
           <p>Yangın riskini erkenden fark eden, uyarı ve yönlendirme sağlayan güvenli sistem kurguları hazırlıyoruz.</p>
           <ul>
@@ -1100,7 +1155,9 @@
         </article>
 
         <article class="service card reveal">
-          <div class="service-icon">🚧</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 17h16"/><path d="M6 17V9"/><path d="M18 17V9"/><path d="M3 9h18"/><path d="M7 9V6h10v3"/></svg>
+          </div>
           <h3>Bariyer & Geçiş</h3>
           <p>Otopark, site ve işletme girişleri için kontrollü, dayanıklı ve estetik geçiş sistemleri uyguluyoruz.</p>
           <ul>
@@ -1111,7 +1168,9 @@
         </article>
 
         <article class="service card reveal">
-          <div class="service-icon">🔐</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6l7-4Z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
           <h3>Alarm Sistemleri</h3>
           <p>Hırsızlık, ihlal ve çevre güvenliği risklerine karşı anlık uyarı veren alarm çözümleri sunuyoruz.</p>
           <ul>
@@ -1122,7 +1181,9 @@
         </article>
 
         <article class="service card reveal">
-          <div class="service-icon">🏠</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
+          </div>
           <h3>Akıllı Ev</h3>
           <p>Aydınlatma, erişim, güvenlik ve kontrol sistemlerini tek merkezden yöneteceğiniz akıllı yaşam çözümleri kuruyoruz.</p>
           <ul>
@@ -1133,7 +1194,9 @@
         </article>
 
         <article class="service card reveal">
-          <div class="service-icon">🛠️</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"/><path d="M2 12h3"/><path d="M19 12h3"/><path d="M12 2v3"/><path d="M12 19v3"/><path d="m4.9 4.9 2.1 2.1"/><path d="m17 17 2.1 2.1"/><path d="m19.1 4.9-2.1 2.1"/><path d="m7 17-2.1 2.1"/></svg>
+          </div>
           <h3>Teknik Servis</h3>
           <p>Sistemler kurulduktan sonra da performansın korunması için teknik servis ve bakım desteği sağlıyoruz.</p>
           <ul>
@@ -1154,9 +1217,6 @@
         <p class="lead">
           İyi bir güvenlik sistemi yalnızca çalışmaz; iyi görünür, kullanıcıyı yormaz ve işletmenize prestij katar. Bu yüzden her projeye marka değeri gözüyle bakıyoruz.
         </p>
-      </div>
-
-      <div class="panel card reveal">
         <div class="feature-list">
           <div class="feature">
             <strong>Kurumsal Görünüm</strong>
@@ -1166,13 +1226,40 @@
             <strong>Doğru Ürün Kurgusu</strong>
             <p>Gereksiz maliyet oluşturmadan ihtiyacınıza uygun sistem planlıyor, uzun vadeli verim hedefliyoruz.</p>
           </div>
-          <div class="feature">
-            <strong>Temiz İşçilik</strong>
-            <p>Kurulum kalitesi, sistemin ömrünü ve müşteri memnuniyetini doğrudan etkiler. Biz burada fark yaratıyoruz.</p>
+        </div>
+      </div>
+
+      <div class="panel card reveal" id="surec">
+        <span class="eyebrow">• Çalışma Sürecimiz</span>
+        <h2 class="title" style="font-size:clamp(28px,3vw,42px)">İşi baştan sona sistemli yürütüyoruz</h2>
+        <div class="process-list">
+          <div class="process-step">
+            <div class="step-no">01</div>
+            <div>
+              <h4>Keşif & Analiz</h4>
+              <p>Alan yapısını, risk noktalarını ve ihtiyaçları netleştiriyoruz.</p>
+            </div>
           </div>
-          <div class="feature">
-            <strong>Destek Sürekliliği</strong>
-            <p>Kurulum sonrası iletişimi koparmıyor, gerektiğinde hızlı teknik destek ile çözüm üretiyoruz.</p>
+          <div class="process-step">
+            <div class="step-no">02</div>
+            <div>
+              <h4>Planlama & Teklif</h4>
+              <p>Doğru ürün ve doğru kurulum planı ile net bir çözüm hazırlıyoruz.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-no">03</div>
+            <div>
+              <h4>Kurulum & Test</h4>
+              <p>Sistemi temiz işçilikle devreye alıyor, tüm kontrollerini tamamlıyoruz.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="step-no">04</div>
+            <div>
+              <h4>Destek & Sürdürülebilirlik</h4>
+              <p>Kurulum sonrasında da teknik destek ve bakım ile sistem performansını koruyoruz.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -1441,7 +1528,6 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // mobil menü
     const menuToggle = document.getElementById('menuToggle');
     const menu = document.getElementById('menu');
 
@@ -1453,7 +1539,6 @@
       a.addEventListener('click', () => menu.classList.remove('active'));
     });
 
-    // reveal
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) entry.target.classList.add('show');
@@ -1462,7 +1547,6 @@
 
     document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-    // sayaç
     const counterObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
@@ -1489,7 +1573,6 @@
 
     document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
 
-    // faq
     document.querySelectorAll('.faq-item').forEach(item => {
       item.querySelector('.faq-q').addEventListener('click', () => {
         const active = item.classList.contains('active');
@@ -1498,7 +1581,6 @@
       });
     });
 
-    // lightbox
     const lightbox = document.getElementById('lightbox');
     const lightboxImage = document.getElementById('lightboxImage');
     const lightboxClose = document.getElementById('lightboxClose');
@@ -1523,7 +1605,6 @@
       if (e.key === 'Escape') closeLightbox();
     });
 
-    // form -> whatsapp
     document.getElementById('offerForm').addEventListener('submit', function(e){
       e.preventDefault();
 
@@ -1546,23 +1627,20 @@ Bilgi ve teklif almak istiyorum.`;
       window.open('https://wa.me/905368323458?text=' + encodeURIComponent(text), '_blank');
     });
 
-    // hafif premium parallax
-    const card = document.getElementById('parallaxCard');
+    const parallaxCard = document.getElementById('parallaxCard');
 
-    if (card && window.matchMedia('(min-width: 861px)').matches) {
-      card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
+    if (parallaxCard && window.matchMedia('(min-width: 861px)').matches) {
+      parallaxCard.addEventListener('mousemove', (e) => {
+        const rect = parallaxCard.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
-
         const rx = ((y / rect.height) - 0.5) * -5;
         const ry = ((x / rect.width) - 0.5) * 6;
-
-        card.style.transform = `perspective(1200px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+        parallaxCard.style.transform = `perspective(1200px) rotateX(${rx}deg) rotateY(${ry}deg)`;
       });
 
-      card.addEventListener('mouseleave', () => {
-        card.style.transform = 'perspective(1200px) rotateX(0deg) rotateY(0deg)';
+      parallaxCard.addEventListener('mouseleave', () => {
+        parallaxCard.style.transform = 'perspective(1200px) rotateX(0deg) rotateY(0deg)';
       });
     }
   </script>
