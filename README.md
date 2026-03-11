@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="tr">
 <head>
 
@@ -7,9 +7,9 @@
 
 <title>CLK Güvenlik Sistemleri</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<meta name="description" content="CLK Güvenlik Sistemleri Kamera, Alarm, Yangın, Bariyer ve Akıllı Ev Sistemleri">
 
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -17,7 +17,7 @@
 
 body{
 font-family:Inter;
-background:#f5f8fb;
+background:#f4f7fb;
 color:#1f2937;
 }
 
@@ -43,8 +43,8 @@ padding:16px 0;
 }
 
 .logo{
-font-weight:800;
 font-size:22px;
+font-weight:800;
 color:#1f2b39;
 }
 
@@ -55,26 +55,29 @@ font-weight:600;
 
 .hero{
 height:90vh;
+position:relative;
+overflow:hidden;
+}
+
+.slide{
+position:absolute;
+width:100%;
+height:100%;
+background-size:cover;
+background-position:center;
 display:flex;
 align-items:center;
 color:white;
-background:linear-gradient(-45deg,#1f2b39,#3b566e,#7fa4b9,#1f2b39);
-background-size:400% 400%;
-animation:gradient 12s ease infinite;
+padding-left:10%;
+transition:opacity 1s;
 }
 
-@keyframes gradient{
-0%{background-position:0% 50%}
-50%{background-position:100% 50%}
-100%{background-position:0% 50%}
-}
-
-.hero h1{
+.slide h1{
 font-size:52px;
 margin-bottom:20px;
 }
 
-.hero p{
+.slide p{
 font-size:18px;
 margin-bottom:30px;
 }
@@ -85,26 +88,10 @@ color:#1f2b39;
 padding:14px 22px;
 border-radius:10px;
 font-weight:700;
-display:inline-block;
 }
 
 .section{
 padding:80px 0;
-}
-
-.stats{
-background:white;
-}
-
-.stats-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-text-align:center;
-}
-
-.stats h2{
-font-size:40px;
-color:#1f2b39;
 }
 
 .services{
@@ -137,14 +124,18 @@ border-radius:10px;
 cursor:pointer;
 }
 
-.brands{
-display:flex;
-flex-wrap:wrap;
-gap:40px;
-justify-content:center;
-font-weight:700;
-font-size:22px;
-color:#64748b;
+.stats{
+background:white;
+text-align:center;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+}
+
+.stats h2{
+font-size:40px;
 }
 
 .testimonials{
@@ -160,28 +151,6 @@ border-radius:14px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
-.form{
-background:white;
-padding:30px;
-border-radius:14px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-max-width:500px;
-}
-
-.form input,.form textarea{
-width:100%;
-padding:12px;
-margin-bottom:12px;
-border:1px solid #e5e7eb;
-border-radius:8px;
-}
-
-footer{
-text-align:center;
-padding:30px;
-background:white;
-}
-
 .whatsapp{
 position:fixed;
 right:20px;
@@ -191,6 +160,13 @@ color:white;
 padding:15px 20px;
 border-radius:50px;
 font-weight:700;
+}
+
+footer{
+background:white;
+text-align:center;
+padding:30px;
+margin-top:50px;
 }
 
 .lightbox{
@@ -206,7 +182,7 @@ justify-content:center;
 }
 
 .lightbox img{
-max-width:85%;
+max-width:80%;
 border-radius:10px;
 }
 
@@ -232,16 +208,26 @@ border-radius:10px;
 
 <section class="hero">
 
-<div class="container">
+<div class="slide" style="background-image:url(images/proje-1.jpg)">
+<div>
+<h1>Profesyonel Güvenlik Sistemleri</h1>
+<p>Kamera ve alarm çözümleri</p>
+<a class="btn" href="https://wa.me/905368323458">Teklif Al</a>
+</div>
+</div>
 
-<h1 data-aos="fade-up">Profesyonel Güvenlik Sistemleri</h1>
+<div class="slide" style="background-image:url(images/proje-2.jpg)">
+<div>
+<h1>Akıllı Ev Sistemleri</h1>
+<p>Uzaktan kontrol teknolojileri</p>
+</div>
+</div>
 
-<p data-aos="fade-up" data-aos-delay="200">
-Kamera, alarm, bariyer ve akıllı ev sistemlerinde profesyonel çözümler.
-</p>
-
-<a class="btn" href="https://wa.me/905368323458">WhatsApp ile Teklif Al</a>
-
+<div class="slide" style="background-image:url(images/proje-3.jpg)">
+<div>
+<h1>Otopark Bariyer Sistemleri</h1>
+<p>Site ve tesis güvenliği</p>
+</div>
 </div>
 
 </section>
@@ -282,24 +268,24 @@ Kamera, alarm, bariyer ve akıllı ev sistemlerinde profesyonel çözümler.
 
 <div class="services">
 
-<div class="card" data-aos="fade-up">
+<div class="card">
 <h3>Kamera Sistemleri</h3>
-<p>IP ve AHD kamera çözümleri</p>
+<p>IP ve AHD çözümler</p>
 </div>
 
-<div class="card" data-aos="fade-up">
+<div class="card">
 <h3>Yangın Algılama</h3>
 <p>Yangın ihbar sistemleri</p>
 </div>
 
-<div class="card" data-aos="fade-up">
+<div class="card">
 <h3>Bariyer Sistemleri</h3>
-<p>Otopark giriş kontrol sistemleri</p>
+<p>Otopark giriş kontrol</p>
 </div>
 
-<div class="card" data-aos="fade-up">
+<div class="card">
 <h3>Akıllı Ev</h3>
-<p>Otomasyon sistemleri</p>
+<p>Otomasyon çözümleri</p>
 </div>
 
 </div>
@@ -312,7 +298,7 @@ Kamera, alarm, bariyer ve akıllı ev sistemlerinde profesyonel çözümler.
 
 <div class="container">
 
-<h2>Projelerimiz</h2>
+<h2>Projeler</h2>
 
 <div class="gallery">
 
@@ -333,77 +319,21 @@ Kamera, alarm, bariyer ve akıllı ev sistemlerinde profesyonel çözümler.
 
 <div class="container">
 
-<h2>Kullandığımız Markalar</h2>
-
-<div class="brands">
-
-<div>HIKVISION</div>
-<div>DAHUA</div>
-<div>EZVIZ</div>
-<div>TP-LINK</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="container">
-
 <h2>Müşteri Yorumları</h2>
 
 <div class="testimonials">
 
 <div class="testimonial">
-<p>Kurulum çok hızlı yapıldı. Çok memnun kaldık.</p>
+<p>Çok kaliteli kurulum yaptılar.</p>
 <strong>Ahmet Y.</strong>
 </div>
 
 <div class="testimonial">
-<p>Kamera sistemi çok kaliteli. Tavsiye ederim.</p>
+<p>Kamera sistemi çok başarılı.</p>
 <strong>Mehmet K.</strong>
 </div>
 
 </div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="container">
-
-<h2>Teklif Al</h2>
-
-<div class="form">
-
-<input placeholder="Ad Soyad">
-
-<input placeholder="Telefon">
-
-<textarea placeholder="Mesajınız"></textarea>
-
-<button class="btn">Gönder</button>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="container">
-
-<h2>Adres</h2>
-
-<iframe
-src="https://maps.google.com/maps?q=Bağcılar%20İstanbul&t=&z=13&ie=UTF8&iwloc=&output=embed"
-width="100%" height="300" style="border:0;border-radius:12px;">
-</iframe>
 
 </div>
 
@@ -421,11 +351,17 @@ width="100%" height="300" style="border:0;border-radius:12px;">
 <img id="lightbox-img">
 </div>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 <script>
 
-AOS.init()
+let slides=document.querySelectorAll(".slide")
+let index=0
+
+setInterval(()=>{
+slides.forEach(s=>s.style.opacity=0)
+index++
+if(index>=slides.length)index=0
+slides[index].style.opacity=1
+},4000)
 
 const images=document.querySelectorAll(".gallery img")
 const lightbox=document.getElementById("lightbox")
@@ -438,14 +374,15 @@ lightboxImg.src=img.src
 }
 })
 
-lightbox.onclick=()=>{lightbox.style.display="none"}
+lightbox.onclick=()=>{
+lightbox.style.display="none"
+}
 
 const counters=document.querySelectorAll(".counter")
 
 counters.forEach(counter=>{
-counter.innerText="0"
 const update=()=>{
-const target=+counter.getAttribute("data-target")
+const target=+counter.dataset.target
 const c=+counter.innerText
 const inc=target/100
 if(c<target){
