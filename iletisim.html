@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim | CLK Güvenlik</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <div class="logo">CLK</div>
+      <div class="brand-meta">
+        <strong>CLK Güvenlik Sistemleri</strong>
+        <span>Premium Kurumsal Güvenlik Çözümleri</span>
+      </div>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle">☰</button>
+
+    <nav class="menu" id="menu">
+      <a href="index.html">Anasayfa</a>
+      <a href="hizmetler.html">Hizmetler</a>
+      <a href="projeler.html">Projeler</a>
+      <a href="hakkimizda.html">Hakkımızda</a>
+      <a href="iletisim.html" class="active">İletişim</a>
+      <a href="iletisim.html" class="btn cta">Teklif Al</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container contact-grid">
+    <div class="contact-card card">
+      <span class="eyebrow">• İletişim</span>
+      <h3>Bize hızlıca ulaşın</h3>
+
+      <div class="contact-list">
+        <div class="contact-item">
+          <small>Telefon / WhatsApp</small>
+          <a href="https://wa.me/905368323458" target="_blank">0536 832 34 58</a>
+        </div>
+        <div class="contact-item">
+          <small>E-posta</small>
+          <a href="mailto:clkguvenliksistemleri@gmail.com">clkguvenliksistemleri@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <small>Instagram</small>
+          <a href="https://www.instagram.com/guvenlik_kamera_sistemleri/" target="_blank">@guvenlik_kamera_sistemleri</a>
+        </div>
+        <div class="contact-item">
+          <small>Adres</small>
+          <strong>Göztepe Mah. 2395 Sk. No:7 D:6 Bağcılar / İstanbul</strong>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe
+          src="https://maps.google.com/maps?q=Bağcılar%20İstanbul&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          loading="lazy"
+          title="CLK Güvenlik konum haritası"></iframe>
+      </div>
+    </div>
+
+    <div class="contact-card card">
+      <span class="eyebrow">• Teklif Formu</span>
+      <h3>Projenizi anlatın</h3>
+
+      <form id="offerForm">
+        <div class="form-grid">
+          <input class="field" id="name" type="text" placeholder="Ad Soyad" required>
+          <input class="field" id="phone" type="tel" placeholder="Telefon" required>
+        </div>
+
+        <div class="form-grid" style="margin-top:14px">
+          <input class="field" id="service" type="text" placeholder="İlgilendiğiniz hizmet">
+          <input class="field" id="location" type="text" placeholder="İlçe / Lokasyon">
+        </div>
+
+        <div style="margin-top:14px">
+          <textarea class="field" id="message" placeholder="Kısaca proje detayınızı yazın"></textarea>
+        </div>
+
+        <div style="margin-top:16px">
+          <button class="btn btn-primary" type="submit">WhatsApp’tan Gönder</button>
+        </div>
+      </form>
+
+      <p class="form-note">
+        Form gönderildiğinde bilgileriniz WhatsApp mesajı olarak hazırlanır.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-row">
+    <div>© <span id="year"></span> CLK Güvenlik Sistemleri</div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
