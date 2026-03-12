@@ -38,3 +38,22 @@ Bilgi ve teklif almak istiyorum.`;
     window.open('https://wa.me/905368323458?text=' + encodeURIComponent(text), '_blank');
   });
 }
+let index = 0
+const slides = document.getElementById("slides")
+const total = slides.children.length
+
+function showSlide(){
+  slides.style.transform = `translateX(-${index*100}%)`
+}
+
+function nextSlide(){
+  index = (index + 1) % total
+  showSlide()
+}
+
+function prevSlide(){
+  index = (index - 1 + total) % total
+  showSlide()
+}
+
+setInterval(nextSlide, 3500)
