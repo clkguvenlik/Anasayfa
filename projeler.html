@@ -42,14 +42,14 @@
       align-items: center;
       gap: 0;
       min-height: 580px;
-      background: linear-gradient(180deg,#ffffff 0%, #f8fbff 100%);
+      background: linear-gradient(180deg,#ffffff 0%, #ffffff 100%);
     }
 
     .project-slide-image{
       height: 100%;
       min-height: 580px;
       overflow: hidden;
-      background: #eef4f8;
+      background: #ffffff;
     }
 
     .project-slide-image img{
@@ -68,9 +68,9 @@
       gap: 8px;
       padding: 8px 12px;
       border-radius: 999px;
-      border: 1px solid #dbe7f0;
-      background: #f7fbff;
-      color: #5f7991;
+      border: 1px solid #ffffff;
+      background: #ffffff;
+      color: #ffffff;
       font-size: 13px;
       font-weight: 800;
       margin-bottom: 16px;
@@ -104,7 +104,7 @@
       border-radius: 999px;
       background: #fff;
       border: 1px solid #dce7f1;
-      color: #4f667d;
+      color: #ffffff;
       font-size: 13px;
       font-weight: 700;
       box-shadow: var(--shadow-soft);
@@ -118,7 +118,7 @@
       height: 52px;
       border: none;
       border-radius: 50%;
-      background: rgba(255,255,255,.95);
+      background: rgba(255, 255, 255, 0.95);
       color: var(--title);
       font-size: 24px;
       font-weight: 800;
@@ -148,7 +148,7 @@
       height: 12px;
       border-radius: 50%;
       border: none;
-      background: #c9d8e5;
+      background: #ffffff;
       cursor: pointer;
       transition: .25s ease;
     }
@@ -271,6 +271,9 @@
 <section class="project-hero">
   <div class="container">
     <span class="eyebrow">• Projelerimiz</span>
+        <h1 class="title">Profesyonel çözümlerle</h1>
+    <p class="lead">ihtiyaca göre planlanan sistemler</p>
+
     <p class="lead">
   
   <div class="container">
@@ -303,22 +306,6 @@
 <img src="images/proje-122.jpg">
 <img src="images/proje-123.jpg">
 <img src="images/proje-124.jpg">
-<img src="images/proje-125.jpg">
-<img src="images/proje-126.jpg">
-<img src="images/proje-127.jpg">
-<img src="images/proje-128.jpg">
-<img src="images/proje-129.jpg">
-<img src="images/proje-130.jpg">
-<img src="images/proje-131.jpg">
-<img src="images/proje-132.jpg">
-<img src="images/proje-133.jpg">
-<img src="images/proje-134.jpg">
-<img src="images/proje-135.jpg">
-<img src="images/proje-136.jpg">
-<img src="images/proje-137.jpg">
-<img src="images/proje-138.jpg">
-<img src="images/proje-139.jpg">
-<img src="images/proje-140.jpg">
 
       </div>
 
@@ -328,7 +315,6 @@
     </div>
 
   </div>
-</section>
 </section>
 
 
@@ -344,71 +330,7 @@
   </div>
 </footer>
 
-<a class="fab" href="https://wa.me/905368323458" target="_blank">☎</a>
-
 <script src="script.js"></script>
-<script>
-  const slides = document.getElementById('projectSlides');
-  const slideItems = document.querySelectorAll('.project-slide');
-  const prevBtn = document.getElementById('prevBtn');
-  const nextBtn = document.getElementById('nextBtn');
-  const dotsWrap = document.getElementById('sliderDots');
-
-  let currentIndex = 0;
-  let autoSlide;
-
-  slideItems.forEach((_, index) => {
-    const dot = document.createElement('button');
-    dot.className = 'slider-dot' + (index === 0 ? ' active' : '');
-    dot.setAttribute('aria-label', `Görsel ${index + 1}`);
-    dot.addEventListener('click', () => {
-      currentIndex = index;
-      updateSlider();
-      restartAutoSlide();
-    });
-    dotsWrap.appendChild(dot);
-  });
-
-  const dots = document.querySelectorAll('.slider-dot');
-
-  function updateSlider() {
-    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-
-    dots.forEach((dot, index) => {
-      dot.classList.toggle('active', index === currentIndex);
-    });
-  }
-
-  function nextSlide() {
-    currentIndex = (currentIndex + 1) % slideItems.length;
-    updateSlider();
-  }
-
-  function prevSlide() {
-    currentIndex = (currentIndex - 1 + slideItems.length) % slideItems.length;
-    updateSlider();
-  }
-
-  function startAutoSlide() {
-    autoSlide = setInterval(nextSlide, 4000);
-  }
-
-  function restartAutoSlide() {
-    clearInterval(autoSlide);
-    startAutoSlide();
-  }
-
-  nextBtn.addEventListener('click', () => {
-    nextSlide();
-    restartAutoSlide();
-  });
-
-  prevBtn.addEventListener('click', () => {
-    prevSlide();
-    restartAutoSlide();
-  });
-
-  startAutoSlide();
 </script>
 </body>
 </html>
